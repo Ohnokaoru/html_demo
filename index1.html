@@ -14,6 +14,8 @@
             background-color: #DCF2F1;
             font-family: 微軟正黑體, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
             padding: 6px;
+            background-image: url("imgs/sushil-ghimire-5UbIqV58CW8-unsplash.jpg");
+            background-size: contain;
         }
 
         .title {
@@ -67,11 +69,13 @@
         }
 
         td:first-child {
-            background-color: rgb(211, 226, 239);
+            background-color: rgb(195, 221, 243);
 
         }
 
-        td:nth-child(3) {
+        td:nth-child(2),
+        td:nth-child(3),
+        td:nth-child(4) {
             background-color: rgb(211, 226, 239)
         }
 
@@ -85,7 +89,10 @@
 
         form {
             width: 80%;
+            color: aliceblue;
             background-color: #E5E1DA;
+            background-image: url("imgs/brett-jordan-U2q73PfHFpM-unsplash.jpg");
+            background-size: cover;
             padding-top: 10px 0;
             border-radius: 10px;
             margin-top: 6px;
@@ -104,6 +111,14 @@
             background-color: rgb(212, 193, 169);
             border-radius: 6px;
         }
+
+        a {
+            color: rgb(174, 218, 219);
+        }
+
+        a:hover {
+            color: brown;
+        }
     </style>
 
 
@@ -118,7 +133,7 @@
 <body>
     <div id="container">
         <!-- div+class -->
-        <div class="title">我愛健身網站</div>
+        <div class="title"><b>我愛健身網站</b></div>
         <div id="info">
             <b>健身，英文稱為workout，健身這兩個字拆開來的意思就是健康身體，通過各種運動方式或方法來增強力量、增加肌肉量、柔韌性、耐力，
                 以及提高協調和控制身體各部分的能力來使我們的身體更強健。</b>
@@ -130,7 +145,7 @@
         </div>
         <hr size="3">
         <a target="_blank" href="https://unsplash.com/">
-            <img width="90%" src="https://photo.16pic.com/00/67/96/16pic_6796167_b.jpg" alt="找不到圖片">
+            <img width="100%" src="https://photo.16pic.com/00/67/96/16pic_6796167_b.jpg" alt="找不到圖片">
         </a>
         <div class="sub-title">健身的10個好處</div>
         <ol type="1" style="background-color: #DCF2F1;color: black;">
@@ -156,7 +171,7 @@
                     href="https://health.tvbs.com.tw/nutrition/344259">補鈣效果超越牛奶，9種蔬菜是高鈣王！芥藍、地瓜葉這樣吃才防骨質疏鬆</a>
             </li>
         </ul>
-        <small>引用網址:<a target="_blank"
+        <small style="color: #d3d4f6;">引用網址:<a target="_blank"
                 href="https://health.tvbs.com.tw/nutrition">https://health.tvbs.com.tw/nutrition</a></small>
         <hr>
         <div id="pic">
@@ -197,7 +212,7 @@
                 </tr>
             </tbody>
         </table>
-        <p>
+        <p style="color: #e68a39;">
             <b><u><a href="bmi1.html">計算BMI:</a>&nbsp;</u></b>
             一位民眾身高160公分，體重65公斤，BMI25.4kg/m2(=65÷1.6÷1.6)，體重屬於「過重」。<br>
 
@@ -216,7 +231,7 @@
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowfullscreen></iframe>
 
-            <video width="87%" src="video/file_example_MP4_480_1_5MG.mp4" con></video>
+            <video width="87%" src="video/file_example_MP4_480_1_5MG.mp4" controls></video>
         </div>
         <hr>
         <div class="sub-title">表單填寫</div>
@@ -230,7 +245,7 @@
             </form>
             <hr>
             <div class="sub-title">需要更多免費資訊? 免費索取健身資訊</div>
-            <p>前100名還贈送[我愛健身]書籍一本</p>
+            <p style="color: #c0c1df;">前100名還贈送[我愛健身]書籍一本</p>
             <form action="" method="GET">
                 <label for="email">Email:</label>
                 <input type="email" id="email" name="email" placeholder="請輸入Email" required><br>
