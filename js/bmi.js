@@ -2,8 +2,10 @@
 const nameEl = document.querySelector("#username");
 const heightEl = document.querySelector("#userheight");
 const weightEl = document.querySelector("#userweight");
+const bimEl = document.querySelector("#bmi")
+const commentEl = document.querySelector("#comment")
 
-//console.log(nameEl, heightEl, weightEl);
+//console.log(nameEl, heightEl, weightEl,bimEl,commentEl);
 
 //測試函式
 console.log(getBmi(weightEl.value, heightEl.value));
@@ -20,11 +22,38 @@ function calcBmi() {
         return;
     }
 
+
     let bmi = getBmi(weight, height);
-    console.log(bmi);
-
-
+    let comment;
+    if (bmi < 18.5) {
+        comment = "過輕";
+    } else if (bmi < 24) {
+        comment = "正常";
+    } else if (bmi < 27) {
+        comment = "過重";
+    } else if (bmi < 30) {
+        comment = "輕度肥胖";
+    } else if (bmi < 35) {
+        comment = "中度肥胖";
+    } else {
+        comment = "重度肥胖";
+    }
+    // console.log(comment);
+    bimEl.innerText = bmi;
+    commentEl.innerText = comment;
 }
+
+
+
+function clearButton() {
+    nameEl.value = "";
+    heightEl.value = "";
+    weightEl.value = "";
+    bimEl.innerText = "";
+    commentEl.innerText = "";
+}
+
+
 //計算函式，給按鈕綁定用
 function getBmi(weight, height) {
     let bmi = weight / (height / 100) ** 2;

@@ -30,6 +30,24 @@
             }
 
         }
+
+        #bmi {
+            font-size: 30px;
+            color: rgb(17, 100, 164);
+        }
+
+        #comment {
+            font-size: 20px;
+        }
+
+        #result {
+            width: 200px;
+            margin: 10px auto;
+            color: azure;
+            background-color: rgb(159, 187, 211);
+            border-radius: 12px;
+            padding: 10px 10px;
+        }
     </style>
 </head>
 
@@ -44,8 +62,14 @@
             <label for="userweight">體重</label>
             <input type="number" id="userweight" name="userweight" step="0.1" required><br>
             <br><br>
-            <button type="button" onclick="calcBmi()">送出</button><br>
-
+            <button type="button" onclick="calcBmi()">送出</button>
+            <button type="button" onclick="clearButton()">清除</button>
+            <div id="result">
+                <div id="bmi">
+                </div>
+                <div id="comment">
+                </div>
+            </div>
         </form>
         <a href="index1.html">返回首頁</a>
     </div>
