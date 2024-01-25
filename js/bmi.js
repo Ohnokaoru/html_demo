@@ -2,7 +2,7 @@
 const nameEl = document.querySelector("#username");
 const heightEl = document.querySelector("#userheight");
 const weightEl = document.querySelector("#userweight");
-const bimEl = document.querySelector("#bmi")
+const bmiEl = document.querySelector("#bmi")
 const commentEl = document.querySelector("#comment")
 
 //console.log(nameEl, heightEl, weightEl,bimEl,commentEl);
@@ -38,7 +38,7 @@ function calcBmi() {
         comment = "重度肥胖";
     }
     // console.log(comment);
-    bimEl.innerText = bmi;
+    bmiEl.innerText = bmi;
     commentEl.innerText = comment;
 }
 
@@ -48,7 +48,7 @@ function clearButton() {
     nameEl.value = "";
     heightEl.value = "";
     weightEl.value = "";
-    bimEl.innerText = "";
+    bmiEl.innerText = "";
     commentEl.innerText = "";
 }
 
