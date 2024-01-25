@@ -22,7 +22,6 @@ function calcBmi() {
         return;
     }
 
-
     let bmi = getBmi(weight, height);
     let comment;
     if (bmi < 18.5) {
