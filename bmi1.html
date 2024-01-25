@@ -36,21 +36,21 @@
 <body>
     <div id="container">
         <div class="title">BMI計算機</div>
-        <form action="" method="get">
+        <form action="">
             <label for="username">姓名</label>
             <input type="text" id="username" name="username" required><br>
-            <label for="userheigh">身高</label>
-            <input type="number" id="userheigh" name="userheigh" step="0.1" required><br>
+            <label for="userheight">身高</label>
+            <input type="number" id="userheight" name="userheight" step="0.1" required><br>
             <label for="userweight">體重</label>
             <input type="number" id="userweight" name="userweight" step="0.1" required><br>
             <br><br>
-            <button type="submit">送出</button><br>
+            <button type="button" onclick="calcBmi()">送出</button><br>
 
         </form>
         <a href="index1.html">返回首頁</a>
     </div>
 
-
+    <script src="./js/bmi.js"></script>
 </body>
 
 </html>
